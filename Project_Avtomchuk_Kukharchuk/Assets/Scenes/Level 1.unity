@@ -129396,6 +129396,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5434628889479477693, guid: d3a3c43cc56237c4c9b0d0ddbb14d755, type: 3}
+      propertyPath: Priority
+      value: 132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434628889479477693, guid: d3a3c43cc56237c4c9b0d0ddbb14d755, type: 3}
+      propertyPath: m_Volume
+      value: 0.383
+      objectReference: {fileID: 0}
+    - target: {fileID: 5434628889479477693, guid: d3a3c43cc56237c4c9b0d0ddbb14d755, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 0.797
+      objectReference: {fileID: 0}
     - target: {fileID: 7246595981326189388, guid: d3a3c43cc56237c4c9b0d0ddbb14d755, type: 3}
       propertyPath: m_RootOrder
       value: 10

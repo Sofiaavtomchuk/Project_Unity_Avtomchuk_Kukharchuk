@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishLevel : MonoBehaviour
 {
@@ -17,12 +18,13 @@ public class FinishLevel : MonoBehaviour
         if(collision.gameObject.name == "Player")
         {
             finishMusic.Play();
-            CompleteLevel();
+            Invoke("CompleteLevel", 2f);
         }
     }
 
     private void CompleteLevel()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }
 }
