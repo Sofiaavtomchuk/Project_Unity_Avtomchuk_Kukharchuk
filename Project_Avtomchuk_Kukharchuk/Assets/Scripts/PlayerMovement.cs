@@ -18,12 +18,15 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private SpriteRenderer flip;
 
+
+
     [SerializeField] private LayerMask jumpGround;
 
     private enum MovementState {idle, run, jump, falling }
     private MovementState state = MovementState.idle;
 
 
+    [SerializeField] private AudioSource jumpMusic;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -38,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            jumpMusic.Play();
             GetComponent<Rigidbody2D>().velocity = new Vector3(rb.velocity.x, jump);
         }
 
